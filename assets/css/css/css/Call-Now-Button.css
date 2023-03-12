@@ -1,0 +1,109 @@
+* {
+  font-family: Poppins, sans-serif;
+}
+
+.bg-primary {
+  background-color: #51bbff !important;
+}
+
+a:hover {
+  color: #51bbff;
+}
+
+a {
+  color: #51bbff;
+  text-decoration: none;
+}
+
+a:focus, a:hover, a:active {
+  color: #51bbff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .callSpan:active, .callSpan:focus, .callSpan:hover {
+  background-color: #ffffff;
+  border-color: #51bbff;
+  color: #51bbff;
+}
+
+.callSpan {
+}
+
+.callBtn:hover, .callBtn:focus, .callBtn:active {
+  background-color: #51bbff !important;
+  color: #2c3e50 !important;
+  border-color: #2c3e50 !important;
+  /*border: none;*/
+  text-decoration: none;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 5px;
+  padding-right: 0px;
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-top-right-radius: 11px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 2px;
+  border-bottom-left-radius: 11px;
+  position: relative !important;
+}
+
+.callspan:hover, .callBtn:focus, .callBtn:active {
+  background-color: #4e4e4e;
+  border-color: #4e4e4e;
+  color: #51bbff;
+}
+
+.callSpan {
+  border: none;
+  /*padding: 3px;*/
+  border-radius: 0px;
+  padding-top: 3px;
+  padding-right: 16px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 12px;
+}
+
+.callBtn {
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 5px;
+  padding-right: 0px;
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-top-right-radius: 11px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 2px;
+  border-bottom-left-radius: 11px;
+  position: relative !important;
+  /*border: none;*/
+}
+
+.callBtn .callSpan:hover, .callBtn.callSpan:focus, .callBtn.callSpan:active {
+  color: #51bbff !important;
+  background: #2c3e50 !important;
+}
+
+.callBtn .callIcon:hover, .callBtn.callIcon:focus, .callBtn.callIcon:active {
+  /*color: #51bbff !important;*/
+  /*background: #2c3e50 !important;*/
+  /*border-radius: inherit;*/
+  /*border: solid;*/
+  /*border-top: #2c3e50;*/
+}
+
+.callIcon {
+  border: none;
+}
+
