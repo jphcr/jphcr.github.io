@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Endless Runner 3D</title>
+  <title>Zombie 3D Run</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="base.css">
 </head>
 <body>
   <script src="./main.js" type="module">
   </script>
-  <div id="Stats-output"></div>
-  <div id="WebGL-output"></div>
+  <div class="container" id="container">
+    <div class="ui">
+      <div class="score-layout">
+        <div id="Stats-output"></div>
+        <div class="score-text" id="score-text">
+          00000
+        </div>
+      </div>
+    </div>
+    <div class="ui">
+      <div class="game-over-layout" id="game-over">
+        <div class="game-over-text">GAME OVER</div>
+        <div class="score-text" id="final-score">00000</div>
+        <button id="restart-button">Restart</button>
+      </div>      
+    </div>
+    <div class="ui">
+      <div class="game-menu-layout1" id="game-menu">
+        <div class="game-over-text">Welcome to Zombie 3DRun</div>
+        <div class="game-menu-text">Click to play</div>
+      </div>      
+    </div>
+  </div>
 </body>
 </html>

@@ -1,49 +1,153 @@
-/* Reset some basic elements */
-body, h1, h2, h3, h4, h5, h6, p, ul {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-header {
-    background: #50a8a1;
-    padding: 10px;
-    color: white;
+.ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Press Start 2P', cursive;
 }
 
-header h1 {
-    margin: 0;
+@keyframes game-over-anim {
+  from {
+    opacity: 0.0;
+  }
+  to {
+    opacity: 1.0;
+  }
 }
 
-header p {
-    margin: 0;
-    color: #eee;
+.game-over-layout {
+  opacity: 0.0;
+
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
-nav ul {
-    padding: 10px;
-    background: #333;
-    color: white;
+.game-over-layout.active {
+  opacity: 1.0;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.game-over-text {
+  font-size: 5em;
+  color: white;
+  text-shadow: 8px 8px black;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+#restart-button {
+  font-size: 3em;
+  color: white;
+  text-shadow: 8px 8px black;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+.score-text {
+  font-size: 3em;
+  color: white;
+  padding: 2em;
+  text-shadow: 5px 5px black;
+}
+
+.score-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.game-menu-layout1 {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.game-menu-text {
+  margin-top: 20px;
+  font-size: 3em;
+  color: white;
+  text-shadow: 8px 8px black;
+}
+
+.game-menu-layout {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.game-menu-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+}
+
+.game-menu-window > img {
+  width: 64px;
+  height: 64px;
+  padding-top: 100px;
+  image-rendering: pixelated;
+}
+
+.game-menu-window > h1 {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  font-weight: 500;
+  color: rgb(32, 33, 36);
+}
+
+.game-menu-window > p, li {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.55em;
+  color: rgb(95, 99, 104);
+}
+
+.game-menu-window > #error {
+  margin: 0;
+  font-size: 0.8em;
+  line-height: 1.55em;
+  color: rgb(95, 99, 104);
+  margin-top: 12px;
 }
